@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Trirong");
+@font-color: #ffff;
+@btn-color: rgb(244, 65, 65);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trirong", sans-serif;
+    background-image: url(assets/background.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: @font-color;
+}
+
+.btn {
+    display: inline-block;
+    background: @btn-color;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.form-control-check{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-control-check label{
+    flex: 1;
+}
+
+.form-control-check input{
+    flex: 2;
+    height: 20px;
+}
